@@ -2,7 +2,7 @@ import java.io.* ;
 import java.util.* ;
 
 public class inputAndOutput{
-	public static void ScannerTest()
+	public void ScannerTest()
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input a String:");
@@ -13,7 +13,7 @@ public class inputAndOutput{
 		double d = sc.nextDouble();
 		System.out.println(s+':'+n+' '+d);
 	}
-	public static void BufferedReaderTest()
+	public void BufferedReaderTest()
 	{
 		String c= "";
 		int n = 0;
@@ -31,7 +31,8 @@ public class inputAndOutput{
 		}catch(IOException e){}
 	}
 	public static void main(String[] args){
-		BufferedReaderTest();
-		ScannerTest();
+		inputAndOutput iotest = new inputAndOutput();
+		iotest.BufferedReaderTest();
+		iotest.ScannerTest();
 	}
 }
